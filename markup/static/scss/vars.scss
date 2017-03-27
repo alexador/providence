@@ -1,0 +1,29 @@
+// File for scss-vars.
+// For example: main colors, paddings and so on.
+
+//== Iconography
+$icon-font-path: '../fonts/';
+
+//== Colors
+$brand-color: #26272d;
+$plain-text-color: #8c8f94;
+$accent-color: #267df4;
+$accent-color-2: #6fc754;
+$bg-color: #f5f5f8;
+
+
+$text-color: $plain-text-color;
+
+$link-color: $brand-color;
+$link-hover-color: $accent-color;
+$link-hover-decoration: none;
+
+$font-size-base: 20px;
+
+$font-family-base: "Lato", Helvetica, Arial, sans-serif;
+$headings-font-family: "Varela Round", Helvetica, Arial, sans-serif;
+$headings-line-height: 1.2;
+$headings-color: $brand-color;
+$font-size-h1: 62px;
+$font-size-h2: 42px;
+$font-size-h3: 26px;

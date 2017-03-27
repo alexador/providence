@@ -1,0 +1,78 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+a{
+    //font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+h3{
+    font-family: "Lato light";
+}
+h4,
+b{
+    color: $brand-color;
+    text-transform: uppercase;
+    font: bold 12px sans-serif;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+p{
+    margin-bottom: 28px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0 20px;
+    height: 42px;
+    border: 1px solid rgba(38, 39, 45, 0.1);
+    border-radius: 23px;
+    background-color: transparent;
+    color: #26272d;
+    font-size: 16px;
+    line-height: 42px;
+
+    &:hover{
+        color: #26272d;
+        text-decoration: none;
+    }
+    &_big{
+        padding: 0 40px;
+        height: 50px;
+        line-height: 50px;
+    }
+    &_primary{
+        background-color: $accent-color;
+        color: #fff;
+
+        &:hover{
+            color: #fff;
+        }
+    }
+    &_input{
+        padding: 0 25px;
+        background-color: $accent-color-2;
+        color: #fff;
+    }
+    &_dark{
+        background-color: #131315;
+        color: #fff;
+
+        &:hover{
+            color: #fff;
+        }
+    }
+    &__pic-apple {
+        margin-right: 8px;
+    }
+    &__pic-arrow {
+        margin-left: 40px;
+    }
+}
+
+input{
+    padding: 16px 150px 16px 26px;
+    height: 50px;
+    border: 1px solid rgba(38, 39, 45, 0.2);
+    border-radius: 30px;
+    background-color: transparent;
+    font-size: 16px;
+}

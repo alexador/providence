@@ -1,0 +1,18 @@
+mixin main-nav(data)
+    .main-nav
+        .container
+            nav.row
+                .col-md-5
+                    ul.main-nav__menu.main-nav__menu_left
+                        li.main-nav__menu-item: a(href="#") Tour
+                        li.main-nav__menu-item: a(href="#") Features
+                        li.main-nav__menu-item: a(href="#") Pricing
+                .col-md-2
+                    img.main-nav__logo(src="static/img/general/logo.svg")
+                .col-md-5
+                    ul.main-nav__menu.main-nav__menu_right
+                        li.main-nav__menu-item.main-nav__menu-item_help: a(href="#") Help
+                        li.main-nav__menu-item: a(href="#") Contacts
+                        li.main-nav__menu-item: a.btn.btn_primary(href="#")
+                            i.fa.fa-apple.fa-lg.btn__pic-apple
+                            |   Get App

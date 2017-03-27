@@ -1,0 +1,29 @@
+.main-nav {
+    &__menu {
+        padding-right: 0;
+        padding-left: 0;
+        list-style-type: none;
+        font-size: 0;
+
+        &_left{
+            text-align: left;
+        }
+        &_right{
+            text-align: right;
+        }
+    }
+
+    &__menu-item {
+
+        display: inline-block;
+        &_help{
+            a{
+                color: #b5b5b6;
+            }
+        }
+        a {
+            display: block;
+            font-size: 16px;
+        }
+    }
+}
