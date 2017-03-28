@@ -1,29 +1,64 @@
 .main-nav {
-    &__menu {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 43px 0;
+    transition: all 0.5s;
+    background-color: transparent;
+    &_is-active{
+        padding: 24px 0;
+        background-color: #fff;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    &__logo{
+        display: block;
+        margin-top: 14px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__menu{
         padding-right: 0;
         padding-left: 0;
         list-style-type: none;
         font-size: 0;
 
         &_left{
-            text-align: left;
+            margin-left: 44px;            
         }
         &_right{
             text-align: right;
         }
     }
 
-    &__menu-item {
+    &__ham{
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        margin-top: -20px;
+        i {
+            display: inline-block;
+        }
+    }
 
+    &__menu-item {
         display: inline-block;
+        margin-right: 30px;
+        font-size: 16px;
+        &:last-child{
+            margin-right: 0;
+        }
+        a {
+            display: block;
+            line-height: 42px;
+        }
         &_help{
             a{
                 color: #b5b5b6;
             }
-        }
-        a {
-            display: block;
-            font-size: 16px;
-        }
+        }       
     }
 }

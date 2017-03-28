@@ -1,6 +1,8 @@
 mixin main-nav(data)
     .main-nav
         .container
+            a.main-nav__ham(href="#"): i.fa.fa-bars.fa-lg
+
             nav.row
                 .col-md-5
                     ul.main-nav__menu.main-nav__menu_left
@@ -8,7 +10,7 @@ mixin main-nav(data)
                         li.main-nav__menu-item: a(href="#") Features
                         li.main-nav__menu-item: a(href="#") Pricing
                 .col-md-2
-                    img.main-nav__logo(src="static/img/general/logo.svg")
+                    img.main-nav__logo(src="static/img/general/logo.svg" width="139px" height="12px")
                 .col-md-5
                     ul.main-nav__menu.main-nav__menu_right
                         li.main-nav__menu-item.main-nav__menu-item_help: a(href="#") Help
