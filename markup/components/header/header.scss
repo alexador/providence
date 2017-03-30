@@ -1,0 +1,27 @@
+.header {
+    //height: 1000px;
+    position: relative;
+    padding: 175px 0 510px;
+    background-image: url(%=static=%assets/header/header_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    &__header {
+        line-height: 1.1;
+    }
+    &__text {
+        max-width: 780px;
+        margin: 33px auto 0;
+    }
+    &__btn {
+        margin-top: 61px;
+    }
+    &__phone {
+        position: absolute;
+        bottom: -393px;
+        left: 50%;
+        margin-left: -232px;
+    }
+}
+

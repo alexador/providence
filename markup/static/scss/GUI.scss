@@ -1,63 +1,74 @@
 // GUI stylies of the project
 // For example, styles of the links, buttons and so on.
-// GUI stylies of the project
-// For example, styles of the links, buttons and so on.
-a{
+a {
     //font-family: "Lato", Helvetica, Arial, sans-serif;
 }
-h3{
+
+h3 {
     font-family: "Lato light";
 }
+
 h4,
-b{
-    color: $brand-color;
+b {
     text-transform: uppercase;
+    color: $brand-color;
     font: bold 12px sans-serif;
     font-family: "Lato", Helvetica, Arial, sans-serif;
 }
-p{
+
+p {
     margin-bottom: 28px;
 }
 
-.btn{
+.btn {
     display: inline-block;
-    padding: 0 20px;
     height: 42px;
+    padding: 0 20px;
+    color: #26272d;
     border: 1px solid rgba(38, 39, 45, 0.1);
     border-radius: 23px;
     background-color: transparent;
-    color: #26272d;
     font-size: 16px;
     line-height: 42px;
-
-    &:hover{
-        color: #26272d;
+    &:hover {
         text-decoration: none;
+        color: #26272d;
     }
-    &_big{
-        padding: 0 40px;
+    &_big {
         height: 50px;
+        padding: 0 40px;
         line-height: 50px;
     }
-    &_primary{
-        background-color: $accent-color;
+    &_primary {
         color: #fff;
-
-        &:hover{
+        background-color: $accent-color;
+        &:hover {
             color: #fff;
         }
     }
-    &_input{
+    &_input {
         padding: 0 25px;
+        color: #fff;
         background-color: $accent-color-2;
-        color: #fff;
     }
-    &_dark{
-        background-color: #131315;
+    &_dark {
         color: #fff;
-
-        &:hover{
+        background-color: #131315;
+        &:hover {
             color: #fff;
+        }
+    }
+    &_transparent {
+        border: 0;
+        &:active {
+            outline: none;
+            box-shadow: none;
+            &:focus {
+                outline: none;
+            }
+        }
+        &:focus {
+            outline: none;
         }
     }
     &__pic-apple {
@@ -68,9 +79,9 @@ p{
     }
 }
 
-input{
-    padding: 16px 150px 16px 26px;
+input {
     height: 50px;
+    padding: 16px 150px 16px 26px;
     border: 1px solid rgba(38, 39, 45, 0.2);
     border-radius: 30px;
     background-color: transparent;

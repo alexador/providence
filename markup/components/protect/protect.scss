@@ -1,0 +1,30 @@
+.protect{
+    padding: 218px 0 318px;
+    position: relative;
+    overflow: hidden;
+    &__heading{
+        margin-bottom: 65px;
+    }       
+    &__text{
+        margin-bottom: 28px;
+    }
+
+    a.btn{
+        margin-top: 45px;
+        margin-right: 20px;
+    }
+
+    &__pic{
+        position: absolute;
+        bottom: 107px;
+        right: 48%;
+        @media only screen and (max-width: $screen-md){
+            position: relative;
+            right: auto;
+            bottom: auto;
+            margin-top: 50px;
+            padding: 0 15px;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.features{
+    padding: 120px 0;
+    &__item{
+        padding: 0 54px;
+        @media only screen and (max-width: $screen-md){
+            padding: 0;
+        }
+    }
+    &__pic{
+        width: 52px;
+        height: 52px;
+        display: block; 
+        &_lock{
+            background: url(%=static=%assets/features/lock.png) left bottom no-repeat;
+        }
+        &_clock{
+            background: url(%=static=%assets/features/clock.png) left bottom no-repeat;
+        }
+    }
+    &__heading{
+        margin: 40px 0 36px;
+    }
+    &__text{
+        margin-bottom: 28px;
+        font-size: 18px;
+    }
+
+}

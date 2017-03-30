@@ -6,6 +6,12 @@ html(class="no-js", lang="ru")
     include ../components/footer/footer.pug
     include ../components/main-nav/main-nav.pug
     include ../components/header/header.pug
+    include ../components/features/features.pug
+    include ../components/protect/protect.pug
+    include ../components/everywhere/everywhere.pug
+    include ../components/interface/interface.pug
+    include ../components/reviews/reviews.pug
+    include ../components/plan/plan.pug
 
     head
         +head(head.defaults)
@@ -15,6 +21,13 @@ html(class="no-js", lang="ru")
         section.page__wrapper
             +main-nav()
             +header()
+            +features()
+            +protect()
+            +everywhere()
+            +interface()
+            +reviews()
+            +plan()
+
 
 
             .page__buffer
