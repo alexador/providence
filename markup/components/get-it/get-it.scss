@@ -1,0 +1,66 @@
+.get-it{
+    padding: 87px 0 132px;
+    background-color: $bg-color;
+
+    &__subtitle{
+        display: block;
+        color: $plain-text-color;
+
+        span{
+            font-weight: normal;
+        }
+    }
+    &__title{
+        margin-top: 29px;
+        margin-bottom: 45px;
+    }
+    &__form{
+        position: relative;
+        margin: 0 auto 64px;
+        width: 502px;
+
+        input{
+            max-width: 100%;
+            width: 502px;
+        }
+        button{    
+            position: absolute;        
+            top: 4px;
+            right: 5px;
+
+            i{
+                margin-left: 20px;
+            }
+        }
+    }
+    .btn_dark{
+        margin-top: 19px;
+        padding: 0 36px 0 26px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 12px;
+
+        span{
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 10px;
+
+        }
+        b{
+            display: inline;
+            color: #fff;
+            text-transform: none;
+            font-weight: normal;
+            font-size: 23px;
+        }
+        i.fa-apple{
+            position: relative;
+            bottom: 2px;
+            display: inline-block;            
+            margin-right: 16px;
+            vertical-align: middle;
+            font-size: 30px;
+        }
+    }
+
+}

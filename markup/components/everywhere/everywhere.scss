@@ -1,0 +1,23 @@
+.everywhere{
+    position: relative;
+    overflow: hidden;
+    padding: 105px 0;
+
+    &__heading{
+        margin-bottom: 57px;
+    }
+    &__pic{
+        position: absolute;
+        top: 121px;
+        left: 47%;
+
+        @media only screen and (max-width: $screen-md){
+            position: relative;
+            top: auto;
+            left: auto;
+            margin-top: 50px;
+            padding: 0 15px;
+            width: 100%;
+        }
+    }
+}

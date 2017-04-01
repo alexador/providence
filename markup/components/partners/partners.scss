@@ -1,0 +1,21 @@
+.partners{
+    margin: 65px 0;
+
+    &__heading{
+        margin-bottom: 28px;
+    }
+    &__list{
+        overflow: hidden;
+        margin-left: 0;
+        padding-left: 0;
+        list-style-type: none;        
+    }
+    &__list-item{
+        float: left;
+        margin-right: 25px;
+
+        a{
+            display: block;
+        }
+    }
+}
