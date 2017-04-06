@@ -1,0 +1,77 @@
+.footer {
+    margin-top: 20px;
+    &__wrapper{
+        border-top: 1px solid #f4f4f4;
+        border-bottom: 1px solid #f4f4f4;
+        padding-top: 80px;
+        padding-bottom: 115px;
+    }
+    &__logo{
+        display: block;
+        margin-top: 11px;
+        margin-bottom: 29px;
+    }
+    &__text{        
+        font-size: 14px;
+        line-height: 24px;
+        &_caps{
+            font-size: 10px;
+            text-transform: uppercase;
+            color: $brand-color;
+            font-weight: bold;
+        }
+    }
+    &__download-app{
+        width: 142px;
+        margin-bottom: 34px;
+    }
+    &__social-list {
+        margin-left: 0;
+        padding-left: 0;
+        list-style-type: none;
+    }
+    &__social-item {
+        float: left;
+        margin-right: 24px;
+        a {
+            color: #bdbec0;
+        }
+    }
+
+    &__link-list{
+        margin-top: 8px;
+        margin-left: 15px;
+        padding-left: 0;
+        list-style-type: none;
+        line-height: 35px;
+    }
+    &__link-item{
+        
+        a{
+            color: $plain-text-color;
+            font-size: 16px;
+        }
+    }
+    &__link-item_title{
+        display: block;
+        margin-bottom: 10px;
+    }
+    //copyright part
+    &__copyright-wrapper{
+        padding-top: 32px;
+    }
+    &__link{
+        color: #3b55e6;
+    }
+    &__text_caps{
+        display: inline-block;
+        position: relative;
+        bottom: 5px;    
+    }
+    &__makers-logo{
+        display: inline-block;
+        position: relative;
+        bottom: 6px;
+        margin-left: 12px;
+    }
+}

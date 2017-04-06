@@ -1,6 +1,6 @@
 .plan {
     padding-top: 155px;
-    padding-bottom: 155px;
+    padding-bottom: 190px;
     background-color: $bg-color;
     &__title {
         width: 252px;
@@ -27,7 +27,7 @@
         position: relative;
         width: 260px;
         height: 50px;
-        border: 1px solid rgba(38, 39, 45, 0.1);
+        border: 1px solid #d5d6d7;
         border-radius: 23px;
         &:after {
             position: absolute;
@@ -49,23 +49,30 @@
     }
     //service table
     &__services-wrapper {
-        padding-left: 85px;
+        padding-left: 105px;
+        & > .plan__service {
+            margin-right: -10px
+        }
     }
     &__service {
-        margin-top: 23px;
-        width: 340px;
+        position: relative;
         float: left;
+        width: 340px;
+        margin-top: 23px;
         padding-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
         text-align: center;
         border-radius: 10px;
         background-color: #ebebed;
         &_is-active {
+            z-index: 2;
             margin-top: 3px;
+            margin-left: 0;
             padding-top: 50px;
-            padding-bottom: 50px;
+            padding-bottom: 71px;
             text-align: center;
             background-color: #fff;
+            box-shadow: 10px 28px 50px 0px rgba(92, 95, 101, 0.2);
         }
     }
     &__service-title {
@@ -75,7 +82,7 @@
         display: inline-block;
         margin-top: 15px;
         padding: 5px 15px;
-        border: 1px solid rgba(38, 39, 45, 0.1);
+        border: 1px solid #d4d4d5;
         border-radius: 23px;
     }
     &__tagline {
@@ -86,10 +93,14 @@
     }
     &__feature-list {
         margin-top: 40px;
+        margin-bottom: 47px;
         margin-left: 0;
         padding-left: 0;
         list-style-type: none;
         color: $brand-color;
+        &_short {
+            margin-bottom: 87px;
+        }
         i {
             margin-right: 7px;
             color: #6fc754;
@@ -109,10 +120,7 @@
         padding-left: 28px;
         line-height: 50px;
     }
-    &__service-btn {
-        margin-top: 77px;
-        margin-bottom: 21px;
-        padding-left: 56px;
-        padding-right: 56px;
+    &__btn{
+        width: 214px;
     }
 }

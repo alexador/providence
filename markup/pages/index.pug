@@ -13,6 +13,7 @@ html(class="no-js", lang="ru")
     include ../components/get-it/get-it.pug
     include ../components/reviews/reviews.pug
     include ../components/plan/plan.pug
+    include ../components/subscribe/subscribe.pug
 
     head
         +head(head.defaults)
@@ -29,6 +30,7 @@ html(class="no-js", lang="ru")
             +get-it()
             +reviews()
             +plan()
+            +subscribe()
 
 
 
@@ -41,4 +43,10 @@ html(class="no-js", lang="ru")
         script svg4everybody();
 
         //- Main scripts. You can replace it, but I recommend you to leave it here
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+        script.
+            !window.jQuery && document.write('<script src="static/js/separate-js/jquery.min.js"><\/script>');
+        script(src="static/js/separate-js/bootstrap.min.js")
+        script(src="static/js/separate-js/wow.min.js")
         script(src='%=static=%js/main%=hash=%%=min=%.js')

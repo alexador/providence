@@ -1,0 +1,27 @@
+.subscribe{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 36px;
+    &__title{
+        margin-bottom: 40px;
+    }
+    &__form-wrapper{
+        position: relative;
+        width: 562px;
+        margin-left: auto;
+        margin-right: auto;
+        button{
+            position: absolute;
+            top: 4px;
+            right: 5px;
+        }
+        input{
+            width: 562px;
+        }
+    }
+    &__small-text{
+        margin-top: 26px;
+        font-size: 14px;
+    }
+
+}

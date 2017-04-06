@@ -20,8 +20,9 @@ p {
     margin-bottom: 28px;
 }
 
-small{
-
+small,
+.small-text {
+    font-size: 14px;
 }
 
 .btn {
@@ -49,6 +50,10 @@ small{
         &:hover {
             color: #fff;
         }
+    }
+    &_accent-contour {
+        border-color: $accent-color;
+        color: $accent-color;
     }
     &_input {
         padding: 0 25px;
