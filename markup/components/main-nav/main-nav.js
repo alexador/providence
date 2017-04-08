@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
 
     // Scroll Events
@@ -62,32 +62,32 @@ $(document).ready(function() {
 
 
     // Wow Animations
-    let wow = new WOW({
-        boxClass: 'wow', // default
-        animateClass: 'animated', // default
-        offset: 0, // default
-        mobile: true, // default
-        live: true // default
-    });
-    wow.init();
+    // let wow = new WOW({
+    //     boxClass: 'wow', // default
+    //     animateClass: 'animated', // default
+    //     offset: 0, // default
+    //     mobile: true, // default
+    //     live: true // default
+    // });
+    // wow.init();
 
 
     // Menu For Xs Mobile Screens
-    /*if ($(window).height() < 450) {
-        $('#slide_out_menu').addClass('xs-screen');
-    }
+    // if ($(window).height() < 450) {
+    //     $('.main-nav__slide-footer').addClass('.main-nav__slide-footer_xs');
+    // }
 
-    $(window).on('resize', function(){
-        if ($(window).height() < 450) {
-            $('#slide_out_menu').addClass('xs-screen');
-        } else{
-            $('#slide_out_menu').removeClass('xs-screen');
-        }
-    });
+    // $(window).on('resize', function () {
+    //     if ($(window).height() < 450) {
+    //         $('.main-nav__slide-footer').addClass('.main-nav__slide-footer_xs');
+    //     } else {
+    //         $('.main-nav__slide-footer').removeClass('.main-nav__slide-footer_xs');
+    //     }
+    // });
 
 
     // Magnific Popup
-    $(".lightbox").magnificPopup();*/
+    // $('.lightbox').magnificPopup();
 
 
 

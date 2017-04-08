@@ -1,9 +1,9 @@
 mixin reviews(data)
     section.reviews
         .container
-            .row
-                .reviews__slider
-                    .col-md-8.col-md-offset-2.text-center
+            .row            
+                .col-md-8.col-md-offset-2.text-center
+                    .reviews__wrapper
                         #carousel-example-generic.carousel.slide(data-ride="carousel")
                             ol.carousel-indicators
                                 li.active(data-target="#carousel-example-generic", data-slide-to="0")
@@ -50,8 +50,8 @@ mixin reviews(data)
                                         h4.reviews__customer-name Cameron Dowman
 
                             a.left.carousel-control(href="#carousel-example-generic", role="button" data-slide="prev")
-                                i.fa.fa-chevron-left(aria-hidden="true")
+                                .reviews__arrow-left(aria-hidden="true")
                                 span.sr-only Prev
                             a.right.carousel-control(href="#carousel-example-generic", role="button" data-slide="next")
-                                i.fa.fa-chevron-right(aria-hidden="true")
+                                .reviews__arrow-right(aria-hidden="true")
                                 span.sr-only Next

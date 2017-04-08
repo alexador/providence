@@ -1,18 +1,48 @@
 /* Your custom fonts here */
 
-/* Example
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato-regular-webfont.eot');
+    src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff'),
+         url('../fonts/Lato-Regular.ttf') format('ttf');
+    font-weight: 400;        
+    font-style: normal;     
+}
 
 @font-face {
-    font-family: 'CustomFont';
-    src: url('../fonts/Custom-Font.eot');
-    src: url('../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Custom-Font.woff') format('woff'),
-         url('../fonts/Custom-Font.svg#custom_font') format('svg');
-    font-weight: 400;       // For normal width. It could has another value   
-    font-style: normal;     // Also could has another value
-    }
+    font-family: 'Lato';
+    src: url('../fonts/lato-light-webfont.eot');
+    src: url('../fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-light-webfont.woff2') format('woff2'),
+         url('../fonts/lato-light-webfont.woff') format('woff'),
+         url('../fonts/Lato-Light.ttf') format('ttf');
+    font-weight: 300;       
+    font-style: normal;     
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato-bold-webfont.eot');
+    src: url('../fonts/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-bold-webfont.woff') format('woff'),
+         url('../fonts/Lato-Bold.ttf') format('ttf');
+    font-weight: 700;      
+    font-style: normal;     
+}
+
+@font-face {
+    font-family: 'Varela Round';
+    src: url('../fonts/VarelaRound-Regular-webfont.eot');
+    src: url('../fonts/VarelaRound-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/VarelaRound-Regular-webfont.woff') format('woff'),
+         url('../fonts/VarelaRound-Regular-webfont.ttf') format('ttf');
+    font-weight: 400;      
+    font-style: normal;     
+}
 
 
 // Var for using custom font
-$CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
-*/
+// $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;

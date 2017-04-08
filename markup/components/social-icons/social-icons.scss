@@ -1,0 +1,12 @@
+.social-icons {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+    &__item {
+        float: left;
+        margin-right: 24px;
+        a {
+            color: #bdbec0;
+        }
+    }
+}

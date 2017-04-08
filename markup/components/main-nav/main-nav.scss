@@ -59,6 +59,40 @@
             a{
                 color: #b5b5b6;
             }
-        }       
+        }               
+    }
+
+
+    &__slide{
+        position: fixed;
+        top: 0;
+        height: 100%;
+        z-index: 100;
+        background-color: pink;
+        left: 0px;
+        width: 360px;
+        overflow-y: auto;
+    }
+    &__slide-content{
+        min-height: 100%;
+        margin-bottom: -100px;
+    }
+    &__buffer{
+        height: 100px;
+    }
+    &__slide-footer{
+        height: 100px;
+    }
+    &__slide-wrapper{
+        padding-left: 0;
+        margin-left: 0;
+        list-style-type: none;
+    }
+    &__slide-close{
+        position: absolute;
+        right: 20px;
+    }
+    &__slide-item{
+        font-size: 16px;
     }
 }

@@ -1,7 +1,30 @@
+include ../social-icons/social-icons.pug
+
 mixin main-nav(data)
     .main-nav
         .container
             a.main-nav__ham(href="#"): i.fa.fa-bars.fa-lg
+
+            .main-nav__slide
+                .main-nav__slide-content
+                    a.main-nav__slide-close
+                        i.fa.fa-times
+                    img.main-nav__slide-logo(src="static/img/general/logo.svg")
+                    ul.main-nav__slide-wrapper
+                        li.main-nav__slide-item: a(href="#") Tour
+                        li.main-nav__slide-item: a(href="#") Features
+                        li.main-nav__slide-item: a(href="#") Pricing
+                        li.main-nav__slide-item: a(href="#") Help
+                        li.main-nav__slide-item: a(href="#") Contacts
+                        li.main-nav__slide-item: a.btn.btn_primary(href="#") Contacts
+                    .main-nav__buffer
+
+                .main-nav__slide-footer
+                    small.main-nav__slide-text Made with love by
+                        a.main-nav__slide-text-link(href="#") Craft Work
+                    small.main-nav__slide-text Developed by
+                        a.main-nav__slide-text-link(href="#") Rui Bogas
+                    +social-icons()   
 
             nav.row
                 .col-md-5

@@ -1,3 +1,5 @@
+include ../social-icons/social-icons.pug
+
 mixin footer(data)
     footer.footer
         .container
@@ -7,20 +9,7 @@ mixin footer(data)
                         img.footer__logo(src="static/img/general/logo.svg" width="139px" height="12px")
                         p.footer__text It was some time before he obtained any answer, and the reply, when made, was unpropitious.
                         img.footer__download-app(src="%=static=%img/assets/footer/app_store.svg")
-
-                        ul.footer__social-list.clearfix
-                            li.footer__social-item: a(href="#")
-                                i.fa.fa-twitter
-                            li.footer__social-item: a(href="#")
-                                i.fa.fa-facebook
-                            li.footer__social-item: a(href="#")
-                                i.fa.fa-google-plus
-                            li.footer__social-item: a(href="#")
-                                i.fa.fa-tumblr
-                            li.footer__social-item: a(href="#")
-                                i.fa.fa-pinterest-p
-                            li.footer__social-item: a(href="#")
-                                i.fa.fa-linkedin
+                        +social-icons()
 
                     .col-md-2.col-md-offset-3
                         ul.footer__link-list
@@ -47,9 +36,9 @@ mixin footer(data)
                             li.footer__link-item: a(href="#") Phone call    
             .footer__copyright-wrapper
                 .row
-                    .col-sm-6.text-left
-                        p.footer__text For more freebies visit: 
+                    .col-sm-6
+                        span.footer__text For more freebies visit: 
                             a.footer__link(href="#") http://getcraftwork.com      
-                    .col-sm-6.text-right
+                    .col-sm-6
                         p.footer__text_caps Made with love by
                         img.footer__makers-logo(src="%=static=%img/assets/footer/makers-logo.png")
