@@ -1,4 +1,4 @@
-include ../social-icons/social-icons.pug
+include ../social_icons/social_icons.pug
 
 mixin footer(data)
     footer.footer
@@ -9,7 +9,7 @@ mixin footer(data)
                         img.footer__logo(src="static/img/general/logo.svg" width="139px" height="12px")
                         p.footer__text It was some time before he obtained any answer, and the reply, when made, was unpropitious.
                         img.footer__download-app(src="%=static=%img/assets/footer/app_store.svg")
-                        +social-icons()
+                        +social_icons(social_icons.default) 
 
                     .col-md-2.col-md-offset-3
                         ul.footer__link-list

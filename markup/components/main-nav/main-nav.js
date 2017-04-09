@@ -22,18 +22,28 @@ $(document).ready(function () {
 
 
     // Navigation
-    /* $('#navigation').on('click', function(e){
-        e.preventDefault();
-        $(this).addClass('open');
-        $('#slide_out_menu').toggleClass('open');
+    // $('#navigation').on('click', function (e) {
+    //     e.preventDefault();
+    //     $(this).addClass('open');
+    //     $('#slide_out_menu').toggleClass('open');
 
-        if ($('#slide_out_menu').hasClass('open')) {
-            $('.menu-close').on('click', function(e){
+    //     if ($('#slide_out_menu').hasClass('open')) {
+    //         $('.menu-close').on('click', function (e) {
+    //             e.preventDefault();
+    //             $('#slide_out_menu').removeClass('open');
+    //         });
+    //     }
+    // });
+    $('.main-nav__ham').on('click', function (e) {
+        e.preventDefault();
+        $('.main-nav__slide-menu').toggleClass('main-nav__slide-menu_open');
+        if ($('.main-nav__slide-menu').hasClass('main-nav__slide-menu_open')) {
+            $('.main-nav__slide-close').on('click', function (e) {
                 e.preventDefault();
-                $('#slide_out_menu').removeClass('open');
-            })
+                $('.main-nav__slide-menu').removeClass('main-nav__slide-menu_open');
+            });
         }
-    });*/
+    });
 
 
     // Price Table

@@ -1,30 +1,34 @@
-include ../social-icons/social-icons.pug
+include ../social_icons/social_icons.pug
 
 mixin main-nav(data)
     .main-nav
         .container
-            a.main-nav__ham(href="#"): i.fa.fa-bars.fa-lg
+            a.main-nav__ham(href="#"): i.fa.fa-bars
 
-            .main-nav__slide
+            .main-nav__slide-menu
                 .main-nav__slide-content
-                    a.main-nav__slide-close
+                    a.main-nav__slide-close(href="#")
                         i.fa.fa-times
-                    img.main-nav__slide-logo(src="static/img/general/logo.svg")
+                    img.main-nav__slide-logo(src="static/img/general/logo_light.svg")
                     ul.main-nav__slide-wrapper
                         li.main-nav__slide-item: a(href="#") Tour
                         li.main-nav__slide-item: a(href="#") Features
                         li.main-nav__slide-item: a(href="#") Pricing
                         li.main-nav__slide-item: a(href="#") Help
                         li.main-nav__slide-item: a(href="#") Contacts
-                        li.main-nav__slide-item: a.btn.btn_primary(href="#") Contacts
+                        li.main-nav__slide-item: a.btn.btn_primary(href="#")
+                            i.fa.fa-apple.fa-lg.btn__pic-apple
+                            |   Get App
+                    //- only for IE8 it has a bad support of border-box with min/max-width/height
                     .main-nav__buffer
 
                 .main-nav__slide-footer
-                    small.main-nav__slide-text Made with love by
-                        a.main-nav__slide-text-link(href="#") Craft Work
-                    small.main-nav__slide-text Developed by
-                        a.main-nav__slide-text-link(href="#") Rui Bogas
-                    +social-icons()   
+                    .main-nav__slide-makers-wrapper
+                        small.main-nav__slide-text Made with love by 
+                            a.main-nav__slide-plain-link(href="#") Craft Work
+                        small.main-nav__slide-text Developed by 
+                            a.main-nav__slide-plain-link(href="#") Rui Bogas
+                    +social_icons(social_icons.narrow) 
 
             nav.row
                 .col-md-5

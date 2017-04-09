@@ -83,13 +83,17 @@
         background: none;
         font-size: 70px;
 
+        @media only screen and (max-width: 991px){
+            display: none;
+        }
+
         &.left{
             top: 56px;
-            left: -254px;
+            left: -40%;
         }
         &.right{
             top: 56px;
-            right: -254px;
+            right: -40%;
         }
     }
 
