@@ -6,8 +6,12 @@
         position: relative;
     }
     &__wrapper{
-        margin-left: 56px;
-        margin-right: 56px;
+        margin-left: 0;
+        margin-right: 0;
+        @media (min-width: $screen-sm-min){
+            margin-left: 56px;
+            margin-right: 56px;        
+        }
     }
     .carousel-indicators{
         position: absolute;
@@ -28,6 +32,14 @@
             transition: all 0.6s cubic-bezier(0.2, 0, 0.12, 1.07);
             transform: scale(0.7);
             border: none;
+            @media (max-width: 500px){
+                width: 90px;
+                height: 90px;
+            }
+            // @media (min-width: $screen-sm-min){                
+            //     width: 130px;
+            //     height: 130px;
+            // }
             &.active {
                 transform: scale(1);
 
@@ -37,7 +49,7 @@
             }            
             img.reviews__img{
                 display: block;
-                min-width: 100%;
+                max-width: 100%;
                 border-radius: 100%;    
             }         
             &:first-child{
@@ -83,7 +95,7 @@
         background: none;
         font-size: 70px;
 
-        @media only screen and (max-width: 991px){
+        @media (max-width: $screen-md-max){
             display: none;
         }
 

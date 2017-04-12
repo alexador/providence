@@ -3,7 +3,6 @@
     padding-bottom: 190px;
     background-color: $bg-color;
     &__title {
-        width: 252px;
         margin-top: 45px;
     }
     &__subtitle {
@@ -49,15 +48,23 @@
     }
     //service table
     &__services-wrapper {
-        padding-left: 105px;
+        padding-left: 0px;
         & > .plan__service {
-            margin-right: -10px
+            margin-right: -10px;
+        }
+        @media screen and (min-width: $screen-md) {
+            padding-left: 50px;
+        }
+        @media screen and (min-width: $screen-lg) {
+            padding-left: 105px;
         }
     }
     &__service {
         position: relative;
-        float: left;
+        display: block;
         width: 340px;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 23px;
         padding-top: 30px;
         padding-bottom: 50px;
@@ -67,12 +74,24 @@
         &_is-active {
             z-index: 2;
             margin-top: 3px;
-            margin-left: 0;
             padding-top: 50px;
             padding-bottom: 71px;
             text-align: center;
             background-color: #fff;
             box-shadow: 10px 28px 50px 0px rgba(92, 95, 101, 0.2);
+            @media only screen and (min-width: $screen-xs-min) {                
+                margin-left: 0;
+            }
+        }
+        @media only screen and (min-width: $screen-xs-min) {            
+            float: left;
+            max-width: 50%;
+        }
+        @media only screen and (min-width: $screen-md-min) {
+            max-width: 50%;
+        }
+        @media only screen and (min-width: $screen-lg-min) {
+            max-width: 60%;
         }
     }
     &__service-title {
@@ -120,7 +139,7 @@
         padding-left: 28px;
         line-height: 50px;
     }
-    &__btn{
+    &__btn {
         width: 214px;
     }
 }
