@@ -1,96 +1,97 @@
 .reviews {
-    padding-top: 128px;
-    padding-bottom: 116px;
-    &__slider {
-        position: relative;
+  padding-top: 128px;
+  padding-bottom: 116px;
+  &__slider {
+    position: relative;
+  }
+  &__wrapper {
+    margin-left: 0;
+    margin-right: 0;
+    @media (min-width: $screen-sm-min) {
+      margin-left: 56px;
+      margin-right: 56px;
     }
-    &__wrapper {
-        margin-left: 0;
-        margin-right: 0;
-        @media (min-width: $screen-sm-min) {
-            margin-left: 56px;
-            margin-right: 56px;
+  }
+  .carousel-indicators {
+    position: relative;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: auto;
+    margin-left: 12px;
+    margin-right: 12px;
+    bottom: auto;
+    text-align: justify;
+    font-size: 0;
+    &:after {
+      content: '';
+      width: 100%;
+      display: inline-block;
+    }
+    li {
+      display: inline-block;
+      max-width: 30%;
+      width: 130px;
+      height: auto;
+      transition: all 0.6s cubic-bezier(0.2, 0, 0.12, 1.07);
+      transform: scale(0.7);
+      border: none;
+      &.active {
+        transform: scale(1);
+        img {
+          box-shadow: 14px 38px 40px 0px rgba(92, 95, 101, 0.28);
         }
+      }
+      img.reviews__img {
+        display: block;
+        max-width: 100%;
+        border-radius: 100%;
+      }
     }
-    .carousel-indicators {
-        position: relative;
-        z-index: 3;
-        top: 0;
-        left: 0;
-        width: auto;
-        margin-left: 12px;
-        margin-right: 12px;
-        bottom: auto;
-        text-align: justify;
-        &:after {
-            content: '';
-            width: 100%;
-            display: inline-block;
-        }
-        li {
-            display: inline-block;
-            max-width: 30%;
-            width: 130px;
-            height: auto;
-            transition: all 0.6s cubic-bezier(0.2, 0, 0.12, 1.07);
-            transform: scale(0.7);
-            border: none;
-            &.active {
-                transform: scale(1);
-                img {
-                    box-shadow: 14px 38px 40px 0px rgba(92, 95, 101, 0.28);
-                }
-            }
-            img.reviews__img {
-                display: block;
-                max-width: 100%;
-                border-radius: 100%;
-            }
-        }
+  }
+  &__item-wrapper {
+    padding-top: 40px;
+  }
+  &__item-header {
+    margin-bottom: 42px;
+    font-size: 32px;
+  }
+  &__item-text {
+    margin-bottom: 22px;
+  }
+  &__item-rating {
+    margin-bottom: 59px;
+    font-size: 24px;
+    & > .fa-star {
+      margin-right: 4px;
+      margin-left: 4px;
     }
-    &__item-wrapper {
-        padding-top: 40px;
+    .gold-star {
+      color: #f2bc3b;
     }
-    &__item-header {
-        margin-bottom: 42px;
-        font-size: 32px;
+  }
+  .carousel-control {
+    width: 42px;
+    height: 42px;
+    color: $plain-text-color;
+    background: none;
+    font-size: 70px;
+    @media (max-width: $screen-sm-max) {
+      display: none;
     }
-    &__item-text {
-        margin-bottom: 22px;
+    &.left {
+      top: 56px;
+      left: -40%;
     }
-    &__item-rating {
-        margin-bottom: 59px;
-        font-size: 24px;
-        & > .fa-star {
-            margin-right: 4px;
-            margin-left: 4px;
-        }
-        .gold-star {
-            color: #f2bc3b;
-        }
+    &.right {
+      top: 56px;
+      right: -40%;
     }
-    .carousel-control {
-        width: 42px;
-        height: 42px;
-        color: $plain-text-color;
-        background: none;
-        font-size: 70px;
-        @media (max-width: $screen-sm-max) {
-            display: none;
-        }
-        &.left {
-            top: 56px;
-            left: -40%;
-        }
-        &.right {
-            top: 56px;
-            right: -40%;
-        }
-    }
-    &__arrow-left {
-        @include bg-svg($arrow_left);
-    }
-    &__arrow-right {
-        @include bg-svg($arrow_right);
-    }
+  }
+  &__arrow-left {
+    @include bg-svg($arrow_left);
+  }
+  &__arrow-right {
+    @include bg-svg($arrow_right);
+  }
 }
