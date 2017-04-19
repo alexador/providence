@@ -1,28 +1,32 @@
-.features{
-    padding: 120px 0;
-    &__item{
-        padding: 0 54px;
-        @media only screen and (max-width: $screen-md){
-            padding: 0;
-        }
+.features {
+  padding-top: 120px;
+  padding-bottom: 23px;
+  &__wrap{
+      padding-bottom: 97px;
+      border-bottom: 1px solid #f4f4f4;
+  }
+  &__item {
+    padding: 0 30px;
+    @media (max-width: $screen-md) {
+      padding: 0;
     }
-    &__pic{
-        width: 52px;
-        height: 52px;
-        display: block; 
-        &_lock{
-            background: url(%=static=%assets/features/lock.png) left bottom no-repeat;
-        }
-        &_clock{
-            background: url(%=static=%assets/features/clock.png) left bottom no-repeat;
-        }
+  }
+  &__pic {
+    display: block;
+    width: 52px;
+    height: 52px;
+    &_lock {
+      background: url(%=static=%assets/features/lock.png) left bottom no-repeat;
     }
-    &__heading{
-        margin: 40px 0 36px;
+    &_clock {
+      background: url(%=static=%assets/features/clock.png) left bottom no-repeat;
     }
-    &__text{
-        margin-bottom: 28px;
-        font-size: 18px;
-    }
-
+  }
+  &__heading {
+    margin: 42px 0 36px;
+  }
+  &__text {
+    margin-bottom: 28px;
+    font-size: 18px;
+  }
 }

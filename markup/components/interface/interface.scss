@@ -1,34 +1,32 @@
-.interface{
-    overflow: hidden;
-    margin-top: 52px;
-    padding: 118px 0 880px;
-    background-color: $bg-color;
-    &__heading{
-        margin-bottom: 35px;
+.interface {
+  overflow: hidden;
+  margin-top: 52px;
+  padding: 118px 0 880px;
+  background-color: $bg-color;
+  &__heading {
+    margin-bottom: 36px;
+  }
+  &__text {
+    color: $plain-text-color;
+  }
+  &__line {
+    width: 48px;
+    margin: auto;
+    height: 2px;
+    background-color: $accent-color;
+    margin-bottom: 41px;
+  }
+  &__showcase-wrapper {
+    position: relative;
+    margin-top: 15px;
+  }
+  &__img-iterface {
+    position: absolute;
+    left: 50%;
+    margin-left: -941px;
+    @media only screen and (max-width: $screen-md) {
+      width: 1412px;
+      margin-left: -706px;
     }
-    &__text{
-        color: $plain-text-color;
-    }
-    &__line{
-        width: 48px;
-        margin: auto;
-        height: 2px;
-        background-color: $accent-color;
-        margin-bottom: 39px;
-    }
-
-
-    &__showcase-wrapper{
-        position: relative;
-        margin-top: 15px;
-    }
-    &__img-iterface{
-        position: absolute;
-        left: 50%;
-        margin-left: -941px;
-        @media only screen and (max-width: $screen-md){
-            width: 1412px;
-            margin-left: -706px;
-        }
-    }
+  }
 }

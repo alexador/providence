@@ -1,39 +1,40 @@
 .reviews {
-  padding-top: 128px;
+  padding-top: 131px;
   padding-bottom: 116px;
   &__slider {
     position: relative;
   }
   &__wrapper {
-    margin-left: 0;
     margin-right: 0;
+    margin-left: 0;
     @media (min-width: $screen-sm-min) {
-      margin-left: 56px;
       margin-right: 56px;
+      margin-left: 56px;
     }
   }
   .carousel-indicators {
     position: relative;
     z-index: 3;
     top: 0;
-    left: 0;
-    width: auto;
-    margin-left: 12px;
-    margin-right: 12px;
     bottom: auto;
+    left: 0;
+    width: 100%;
+    margin-right: 12px;
+    margin-left: 12px;
     text-align: justify;
     font-size: 0;
     &:after {
-      content: '';
-      width: 100%;
       display: inline-block;
+      width: 100%;
+      content: '';
     }
     li {
-      display: inline-block;
-      max-width: 30%;
       width: 130px;
+      // display: inline-block;
+      max-width: 30%;
       height: auto;
-      transition: all 0.6s cubic-bezier(0.2, 0, 0.12, 1.07);
+      margin: 0;
+      transition: all 0.97s cubic-bezier(0.545, 0, 0.05, 1);
       transform: scale(0.7);
       border: none;
       &.active {
@@ -80,11 +81,11 @@
       display: none;
     }
     &.left {
-      top: 56px;
+      top: 46px;
       left: -40%;
     }
     &.right {
-      top: 56px;
+      top: 46px;
       right: -40%;
     }
   }

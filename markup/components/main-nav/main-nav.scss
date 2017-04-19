@@ -1,124 +1,126 @@
 .main-nav {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 43px 0;
+  transition: all 0.5s;
+  background-color: transparent;
+  &_is-active {
+    padding: 24px 0;
+    background-color: #fff;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  }
+  &__logo {
+    display: block;
+    margin-top: 17px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__menu {
+    margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+    list-style-type: none;
+    font-size: 0;
+    @media (max-width: $screen-md) {
+      display: none;
+    }
+    &_left {
+      margin-left: 42px;
+    }
+    &_right {
+      text-align: right;
+    }
+  }
+  &__ham {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    margin-top: -16px;
+    i {
+      display: inline-block;
+    }
+    @media (max-width: $screen-md) {
+      margin-top: -7px;
+    }
+  }
+  &__menu-item {
+    display: inline-block;
+    margin-right: 33px;
+    font-size: 16px;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      display: block;
+      line-height: 42px;
+    }
+    &_help {
+      a {
+        color: #b5b5b6;
+      }
+    }
+  }
+  //Slide-menu start here
+  &__slide-menu {
     position: fixed;
     z-index: 100;
     top: 0;
-    left: 0;
-    width: 100%;
-    padding: 43px 0;
-    transition: all 0.5s;
-    background-color: transparent;
-    &_is-active {
-        padding: 24px 0;
-        background-color: #fff;
-        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+    left: -330px;
+    overflow-y: auto;
+    width: 320px;
+    height: 100%;
+    padding: 38px 38px 0px;
+    transition: left 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+    background-color: $brand-color;
+    &_open {
+      left: 0;
     }
-    &__logo {
-        display: block;
-        margin-top: 14px;
-        margin-right: auto;
-        margin-left: auto;
+  }
+  &__slide-content {
+    min-height: 100%;
+    margin-bottom: -110px;
+  }
+  &__buffer {
+    height: 110px;
+  }
+  &__slide-footer {
+    height: 110px;
+  }
+  &__slide-close {
+    position: absolute;
+    right: 20px;
+    color: $bg-color;
+  }
+  &__slide-wrapper {
+    margin-top: 40px;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  &__slide-item {
+    display: block;
+    height: 32px;
+    font-size: 16px;
+    a {
+      color: $bg-color;
     }
-    &__menu {
-        padding-right: 0;
-        padding-left: 0;
-        list-style-type: none;
-        font-size: 0;
-        @media only screen and (max-width: $screen-md){
-            display: none;
-        }
-        &_left {
-            margin-left: 44px;
-        }
-        &_right {
-            text-align: right;
-        }
+    &:last-child {
+      margin-top: 10px;
+      margin-bottom: 50px;
     }
-    &__ham {
-        position: absolute;
-        z-index: 2;
-        top: 50%;
-        margin-top: -20px;
-        i {
-            display: inline-block;
-        }
-    }
-    &__menu-item {
-        display: inline-block;
-        margin-right: 30px;
-        font-size: 16px;
-        &:last-child {
-            margin-right: 0;
-        }
-        a {
-            display: block;
-            line-height: 42px;
-        }
-        &_help {
-            a {
-                color: #b5b5b6;
-            }
-        }
-    }
-    //Slide-menu start here
-    &__slide-menu {
-        position: fixed;
-        z-index: 100;
-        top: 0;
-        overflow-y: auto;
-        width: 380px;
-        left: -380px;
-        height: 100%;
-        padding: 38px 38px 0px;
-        background-color: $brand-color;
-        transition: left 0.7s cubic-bezier(0.545, 0, 0.05, 1);
-        &_open{
-            left: 0; 
-        }
-    }
-    &__slide-content {
-        min-height: 100%;
-        margin-bottom: -110px;
-    }
-    &__buffer {
-        height: 110px;
-    }
-    &__slide-footer {
-        height: 110px;
-    }
-    &__slide-close {
-        position: absolute;
-        right: 20px;
-        color: $bg-color;
-    }
-    &__slide-wrapper {
-        margin-top: 40px;
-        margin-left: 0;
-        padding-left: 0;
-        list-style-type: none;
-    }
-    &__slide-item {
-        display: block;
-        height: 32px;
-        font-size: 16px;
-        a {
-            color: $bg-color;
-        }
-        &:last-child {
-            margin-top: 10px;
-            margin-bottom: 50px;
-        }
-    }
-    &__slide-makers-wrapper {
-        margin-bottom: 14px;
-    }
-    &__slide-text {
-        display: block;
-        line-height: 24px;
-    }
-    &__slide-plain-link{
-        text-decoration: underline;
-        color: $accent-color;
-    }
-
-
+  }
+  &__slide-makers-wrapper {
+    margin-bottom: 14px;
+  }
+  &__slide-text {
+    display: block;
+    line-height: 24px;
+  }
+  &__slide-plain-link {
+    text-decoration: underline;
+    color: $accent-color;
+  }
 }

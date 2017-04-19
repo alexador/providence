@@ -1,34 +1,32 @@
-.protect{
-    padding: 218px 0 318px;
+.protect {
+  position: relative;
+  overflow: hidden;
+  padding: 218px 0 318px;
+  &__heading {
+    margin-bottom: 65px;
+  }
+  &__text {
+    margin-bottom: 28px;
+  }
+  a.btn {
+    margin-top: 43px;
+    margin-right: 20px;
+  }
+  &__img-wrapper {
     position: relative;
-    overflow: hidden;
-    &__heading{
-        margin-bottom: 65px;
-    }       
-    &__text{
-        margin-bottom: 28px;
+    z-index: 200;
+  }
+  &__pic {
+    position: absolute;
+    right: 46%;
+    bottom: 31px;
+    @media only screen and (max-width: $screen-md) {
+      position: relative;
+      right: 88px;
+      bottom: auto;
+      width: 100%;
+      margin-top: 50px;
+      padding: 0 15px;
     }
-
-    a.btn{
-        margin-top: 45px;
-        margin-right: 20px;
-    }
-    &__img-wrapper{
-        position: relative;
-        z-index: 200;
-    }
-    
-    &__pic{
-        position: absolute;
-        bottom: 31px;
-        right: 46%;
-        @media only screen and (max-width: $screen-md){
-            position: relative;
-            right: 88px;
-            bottom: auto;
-            margin-top: 50px;
-            padding: 0 15px;
-            width: 100%;
-        }
-    }
+  }
 }
