@@ -57,19 +57,29 @@
 
   &__individual{
     opacity: 0;
-    display: none;
+    transition: opacity 1s;
+    .plan__service{
+      display: none;
+    }
   }
   &__individual_active{
-    display: block;
     opacity: 1;
+    .plan__service{
+      display: block;
+    }
   }
   &__company{
     opacity: 0;
-    display: none;
+    transition: opacity 1s;
+    .plan__service{
+      display: none;
+    }
   }
   &__company_active{
-    display: block;
     opacity: 1;
+    .plan__service{
+      display: block;
+    }
   }
   &__service {
     position: relative;
@@ -151,8 +161,19 @@
     padding-right: 28px;
     padding-left: 28px;
     line-height: 50px;
+    color: #b5b5b7;
   }
   &__btn_service {
     width: 214px;
+  }
+  &__btn-individual{
+    &_active{
+      color: #26292c;
+    }
+  }
+  &__btn-company{
+    &_active{
+      color: #26292c;
+    }
   }
 }

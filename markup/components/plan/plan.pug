@@ -6,7 +6,7 @@ mixin plan(data)
           h2.plan__title Choose your perfect plan
           h4.plan__subtitle You are
           .plan__toggle-wrapper
-            button.btn.btn_transparent.plan__btn-switch.plan__btn-individual Individual
+            button.btn.btn_transparent.plan__btn-switch.plan__btn-individual.plan__btn-individual_active Individual
             button.btn.btn_transparent.plan__btn-switch.plan__btn-company Company
           p.plan__text Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.
           p.plan__small-text Have a bigger team? 
@@ -14,7 +14,7 @@ mixin plan(data)
 
 
         .col-md-8.plan__services-wrapper.clearfix
-          .plan__individual.clearfix
+          .plan__individual.plan__individual_active.clearfix
             .plan__service.plan__service_starter.clearfix
               h3.plan__service-title Starter
               h4.plan__price Free
@@ -46,7 +46,7 @@ mixin plan(data)
           .plan__company.clearfix
             .plan__service.plan__service_starter.clearfix
               h3.plan__service-title Starter
-              h4.plan__price Free
+              h4.plan__price $6.99
               p.plan__tagline Build your schedule every day
               ul.plan__feature-list.plan__feature-list_short
                 li.plan__feature-item 
@@ -58,7 +58,7 @@ mixin plan(data)
               a.btn.btn_primary.plan__btn_service Get started
             .plan__service.plan__service_pro.clearfix
               h3.plan__service-title Pro
-              h4.plan__price $4.99
+              h4.plan__price $14.99
               p.plan__tagline Make your life better
               ul.plan__feature-list
                 li.plan__feature-item 
