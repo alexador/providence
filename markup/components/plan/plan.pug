@@ -6,37 +6,68 @@ mixin plan(data)
           h2.plan__title Choose your perfect plan
           h4.plan__subtitle You are
           .plan__toggle-wrapper
-            button.btn.btn_transparent.plan__switch Individual
-            button.btn.btn_transparent.plan__switch Company
+            button.btn.btn_transparent.plan__btn-switch.plan__btn-individual Individual
+            button.btn.btn_transparent.plan__btn-switch.plan__btn-company Company
           p.plan__text Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.
           p.plan__small-text Have a bigger team? 
             a.plan__link(href="#") Let‘s talk
-        .col-md-8.plan__services-wrapper.clearfix
-          .plan__service.plan__service_is-active.clearfix
-            h3.plan__service-title Starter
-            h4.plan__price Free
-            p.plan__tagline Build your schedule every day
-            ul.plan__feature-list.plan__feature-list_short
-              li.plan__feature-item 
-                i.fa.fa-check 
-                | Unlimeted events
-              li.plan__feature-item 
-                i.fa.fa-check 
-                | Connect Dropbox & Evernote
-            a.btn.btn_primary.plan__btn Get started
 
-          .plan__service.clearfix
-            h3.plan__service-title Pro
-            h4.plan__price $4.99
-            p.plan__tagline Make your life better
-            ul.plan__feature-list
-              li.plan__feature-item 
-                i.fa.fa-check 
-                | Unlimeted events
-              li.plan__feature-item 
-                i.fa.fa-check 
-                | Connect Dropbox & Evernote
-              li.plan__feature-item 
-                i.fa.fa-check 
-                | Personal Assistant
-            a.btn.btn_accent-contour.plan__btn Make me a Pro
+
+        .col-md-8.plan__services-wrapper.clearfix
+          .plan__individual.clearfix
+            .plan__service.plan__service_starter.clearfix
+              h3.plan__service-title Starter
+              h4.plan__price Free
+              p.plan__tagline Build your schedule every day
+              ul.plan__feature-list.plan__feature-list_short
+                li.plan__feature-item 
+                  i.fa.fa-check 
+                  | Unlimeted events
+                li.plan__feature-item 
+                  i.fa.fa-check 
+                  | Connect Dropbox & Evernote
+              a.btn.btn_primary.plan__btn_service Get started
+            .plan__service.plan__service_pro.clearfix
+              h3.plan__service-title Pro
+              h4.plan__price $4.99
+              p.plan__tagline Make your life better
+              ul.plan__feature-list
+                li.plan__feature-item 
+                  i.fa.fa-check 
+                  | Unlimeted events
+                li.plan__feature-item 
+                  i.fa.fa-check 
+                  | Connect Dropbox & Evernote
+                li.plan__feature-item 
+                  i.fa.fa-check 
+                  | Personal Assistant
+              a.btn.btn_accent-contour.plan__btn_service Make me a Pro
+
+          .plan__company.clearfix
+            .plan__service.plan__service_starter.clearfix
+              h3.plan__service-title Starter
+              h4.plan__price Free
+              p.plan__tagline Build your schedule every day
+              ul.plan__feature-list.plan__feature-list_short
+                li.plan__feature-item 
+                  i.fa.fa-check 
+                  | Unlimeted events
+                li.plan__feature-item 
+                  i.fa.fa-check 
+                  | Connect Dropbox & Evernote
+              a.btn.btn_primary.plan__btn_service Get started
+            .plan__service.plan__service_pro.clearfix
+              h3.plan__service-title Pro
+              h4.plan__price $4.99
+              p.plan__tagline Make your life better
+              ul.plan__feature-list
+                li.plan__feature-item 
+                  i.fa.fa-check 
+                  | Unlimeted events
+                li.plan__feature-item 
+                  i.fa.fa-check 
+                  | Connect Dropbox & Evernote
+                li.plan__feature-item 
+                  i.fa.fa-check 
+                  | Personal Assistant
+              a.btn.btn_accent-contour.plan__btn_service Make me a Pro
