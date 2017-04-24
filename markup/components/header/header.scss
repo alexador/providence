@@ -2,11 +2,16 @@
   //height: 1000px;
   position: relative;
   overflow: hidden;
-  padding: 175px 0 510px;
+  padding-top: 175px;
+  padding-bottom: 510px;
   background-image: url(%=static=%assets/header/header_bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  @media(max-width: $screen-sm-max){
+    padding-bottom: 410px;
+  }
+
   &__header {
     line-height: 1.1;
   }
@@ -16,11 +21,17 @@
   }
   &__btn {
     margin-top: 59px;
+    background-color: #eef0f2;
   }
   &__phone {
     position: absolute;
     bottom: -393px;
     left: 50%;
     margin-left: -227px;
+    @media (max-width: $screen-sm-max){
+      width: 352px;
+      bottom: -280px;
+      margin-left: -160px;
+    }
   }
 }

@@ -24,7 +24,7 @@
     padding-left: 0;
     list-style-type: none;
     font-size: 0;
-    @media (max-width: $screen-md) {
+    @media (max-width: $screen-md-max) {
       display: none;
     }
     &_left {
@@ -42,7 +42,7 @@
     i {
       display: inline-block;
     }
-    @media (max-width: $screen-md) {
+    @media (max-width: $screen-md-max) {
       margin-top: -7px;
     }
   }
@@ -55,7 +55,7 @@
     }
     a {
       display: block;
-      line-height: 42px;
+      line-height: 41px;
     }
     &_help {
       a {
