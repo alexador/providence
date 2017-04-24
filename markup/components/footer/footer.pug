@@ -1,44 +1,46 @@
 include ../social_icons/social_icons.pug
 
 mixin footer(data)
-    footer.footer
-        .container
-            .footer__wrapper
-                .row
-                    .col-md-3
-                        img.footer__logo(src="static/img/general/logo.svg" width="139px" height="12px")
-                        p.footer__text It was some time before he obtained any answer, and the reply, when made, was unpropitious.
-                        img.footer__download-app(src="%=static=%img/assets/footer/app_store.svg")
-                        +social_icons(social_icons.default) 
+  footer.footer
+    .container
+      .footer__wrapper
+        .row
+          .col-md-3
+            img.footer__logo(src="static/img/general/logo.svg" width="139px" height="12px")
+            p.footer__text It was some time before he obtained any answer, and the reply, when made, was unpropitious.
+            img.footer__download-app(src="%=static=%img/assets/footer/app_store.svg")
+            +social_icons(social_icons.default) 
 
-                    .col-md-2.col-md-offset-3
-                        ul.footer__link-list
-                            b.footer__link-item.footer__link-item_title: span Learn more
-                            li.footer__link-item: a(href="#") How it works?
-                            li.footer__link-item: a(href="#") Meeting tools
-                            li.footer__link-item: a(href="#") Live striming
-                            li.footer__link-item: a(href="#") Contat method
-                            
-                    .col-md-2
-                        ul.footer__link-list
-                            b.footer__link-item.footer__link-item_title: span About us
-                            li.footer__link-item: a(href="#") About us
-                            li.footer__link-item: a(href="#") Features
-                            li.footer__link-item: a(href="#") Privacy police
-                            li.footer__link-item: a(href="#") Terms & Conditions
+          .col-md-2.col-md-offset-3.col-sm-4.col-xs-6
+            ul.footer__link-list
+              b.footer__link-item.footer__link-item_title: span Learn more
+              li.footer__link-item: a(href="#") How it works?
+              li.footer__link-item: a(href="#") Meeting tools
+              li.footer__link-item: a(href="#") Live striming
+              li.footer__link-item: a(href="#") Contat method
+              
+          .col-md-2.col-sm-4.col-xs-6
+            ul.footer__link-list
+              b.footer__link-item.footer__link-item_title: span About us
+              li.footer__link-item: a(href="#") About us
+              li.footer__link-item: a(href="#") Features
+              li.footer__link-item: a(href="#") Privacy police
+              li.footer__link-item: a(href="#") Terms & Conditions
 
-                    .col-md-2
-                        ul.footer__link-list
-                            b.footer__link-item.footer__link-item_title: span Support
-                            li.footer__link-item: a(href="#") F.A.Q.
-                            li.footer__link-item: a(href="#") Contact us
-                            li.footer__link-item: a(href="#") Live chat
-                            li.footer__link-item: a(href="#") Phone call    
-            .footer__copyright-wrapper
-                .row
-                    .col-sm-6
-                        span.footer__text For more freebies visit: 
-                            a.footer__link(href="#") http://getcraftwork.com      
-                    .col-sm-6
-                        p.footer__text_caps Made with love by
-                        img.footer__makers-logo(src="%=static=%img/assets/footer/makers-logo.png")
+          .col-md-2.col-sm-4.col-xs-6
+            ul.footer__link-list
+              b.footer__link-item.footer__link-item_title: span Support
+              li.footer__link-item: a(href="#") F.A.Q.
+              li.footer__link-item: a(href="#") Contact us
+              li.footer__link-item: a(href="#") Live chat
+              li.footer__link-item: a(href="#") Phone call  
+      .footer__copyright-wrapper
+        .row
+          .col-sm-6
+            .footer__see-more
+                span.footer__text For more freebies visit: 
+                  a.footer__link(href="#") http://getcraftwork.com    
+          .col-sm-6
+            .footer__made-by
+                p.footer__text_caps Made with love by
+                img.footer__makers-logo(src="%=static=%img/assets/footer/makers-logo.png")

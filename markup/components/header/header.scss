@@ -8,10 +8,9 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  @media(max-width: $screen-sm-max){
+  @media(max-width: $screen-xs-max) {
     padding-bottom: 410px;
   }
-
   &__header {
     line-height: 1.1;
   }
@@ -28,10 +27,10 @@
     bottom: -393px;
     left: 50%;
     margin-left: -227px;
-    @media (max-width: $screen-sm-max){
-      width: 352px;
+    @media (max-width: $screen-xs-max) {
       bottom: -280px;
-      margin-left: -160px;
+      width: 352px;
+      margin-left: -165px;
     }
   }
 }

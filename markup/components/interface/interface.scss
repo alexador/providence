@@ -3,6 +3,9 @@
   margin-top: 52px;
   padding: 118px 0 880px;
   background-color: $bg-color;
+  @media(max-width: $screen-sm-max){
+    padding-bottom: 660px;
+  }
   &__heading {
     margin-bottom: 36px;
   }
@@ -11,10 +14,10 @@
   }
   &__line {
     width: 48px;
-    margin: auto;
     height: 2px;
-    background-color: $accent-color;
+    margin: auto;
     margin-bottom: 41px;
+    background-color: $accent-color;
   }
   &__showcase-wrapper {
     position: relative;
@@ -24,7 +27,7 @@
     position: absolute;
     left: 50%;
     margin-left: -941px;
-    @media only screen and (max-width: $screen-md) {
+    @media (max-width: $screen-sm-max) {
       width: 1412px;
       margin-left: -706px;
     }
