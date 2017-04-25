@@ -40,6 +40,9 @@ small,
     text-decoration: none;
     color: $brand-color;
   }
+  &:focus{
+    color: #fff;
+  }
   &_big {
     height: 50px;
     padding: 0 40px;
@@ -83,6 +86,10 @@ small,
         outline: none;
       }
     }
+    &:focus{
+      color: $brand-color;
+    }
+    
     &:focus {
       outline: none;
     }

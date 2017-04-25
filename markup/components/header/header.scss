@@ -4,6 +4,7 @@
   overflow: hidden;
   padding-top: 175px;
   padding-bottom: 510px;
+  background-color: #eef0f2;
   background-image: url(%=static=%assets/header/header_bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -21,6 +22,9 @@
   &__btn {
     margin-top: 59px;
     background-color: #eef0f2;
+    &:focus{
+      color: $brand-color;
+    }
   }
   &__phone {
     position: absolute;
