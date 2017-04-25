@@ -3,8 +3,11 @@
   margin-top: 52px;
   padding: 118px 0 880px;
   background-color: $bg-color;
-  @media(max-width: $screen-sm-max){
-    padding-bottom: 660px;
+  @media(max-width: $screen-md-max) {
+    padding-bottom: 690px;
+  }
+  @media(max-width: $screen-sm-max) {
+    padding-bottom: 600px;
   }
   &__heading {
     margin-bottom: 36px;
@@ -27,9 +30,13 @@
     position: absolute;
     left: 50%;
     margin-left: -941px;
+    @media (max-width: $screen-md-max) {
+      width: 1450px;
+      margin-left: -725px;
+    }
     @media (max-width: $screen-sm-max) {
-      width: 1412px;
-      margin-left: -706px;
+      width: 1200px;
+      margin-left: -600px;
     }
   }
 }

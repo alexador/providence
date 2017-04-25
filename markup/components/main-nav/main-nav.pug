@@ -9,7 +9,9 @@ mixin main-nav(data)
         .main-nav__slide-content
           a.main-nav__slide-close(href="#")
             i.fa.fa-times
-          img.main-nav__slide-logo(src="static/img/general/logo_light.svg")
+          picture
+            source.main-nav__slide-logo(srcset="static/img/general/logo_light.svg")
+            img.main-nav__slide-logo(src="static/img/general/logo_light.png")
           ul.main-nav__slide-wrapper
             li.main-nav__slide-item: a(href="#") Tour
             li.main-nav__slide-item: a(href="#") Features
@@ -37,7 +39,9 @@ mixin main-nav(data)
             li.main-nav__menu-item: a(href="#") Features
             li.main-nav__menu-item: a(href="#") Pricing
         .col-md-2
-          img.main-nav__logo(src="static/img/general/logo.svg" width="139px" height="12px")
+          picture
+            source.main-nav__logo(srcset="static/img/general/logo.svg"  width="139px" height="12px")
+            img.main-nav__logo(src="static/img/general/logo.png" width="139px" height="12px")
         .col-md-5
           ul.main-nav__menu.main-nav__menu_right
             li.main-nav__menu-item.main-nav__menu-item_help: a(href="#") Help

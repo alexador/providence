@@ -8,7 +8,8 @@
   transition: all 0.5s;
   background-color: transparent;
   &_is-active {
-    padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
     background-color: #fff;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
   }
@@ -36,9 +37,10 @@
   }
   &__ham {
     position: absolute;
+    font-size: 18px;
     z-index: 2;
     top: 50%;
-    margin-top: -16px;
+    margin-top: -14px;
     i {
       display: inline-block;
     }

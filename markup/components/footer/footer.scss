@@ -4,7 +4,7 @@
     border-top: 1px solid #f4f4f4;
     border-bottom: 1px solid #f4f4f4;
     padding-top: 80px;
-    padding-bottom: 114px;
+    padding-bottom: 96px;
     @media (max-width: $screen-sm-max){
       padding-bottom: 24px;
     }
@@ -52,7 +52,8 @@
   }
   //copyright part
   &__copyright-wrapper {
-    padding-top: 32px;
+    padding-top: 29px;
+    padding-bottom: 20px;
   }
   &__see-more{
     text-align: left;
@@ -61,7 +62,7 @@
     text-align: right;
     @media(max-width: $screen-xs-max){
       margin-top: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 12px;
       text-align: left;
     }
   }
@@ -70,13 +71,9 @@
   }
   &__text_caps {
     display: inline-block;
-    position: relative;
-    bottom: 5px;
     margin-right: 10px;
   }
   &__makers-logo {
     display: inline-block;
-    position: relative;
-    bottom: 6px;
   }
 }
