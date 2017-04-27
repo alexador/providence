@@ -1,0 +1,21 @@
+.plan{
+  &__toggle-wrapper{
+
+    &:after{
+      display: none;
+    }
+  }
+  &__btn-individual_active{
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  &__btn-company_active{
+    text-decoration: underline;
+    font-weight: bold;
+  }  
+  &__service{
+    @media (min-width: $screen-lg-min) {
+      max-width: 50%;
+    }
+  }
+}

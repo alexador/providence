@@ -19,18 +19,16 @@
     bottom: auto;
     left: 0;
     width: 100%;
-    // margin-right: 12px;
     margin-left: 0px;
     text-align: justify;
-    font-size: 0;
+    font-size: 1px;
     &:after {
       display: inline-block;
       width: 100%;
-      content: '';
+      content: ' ';
     }
     li {
       width: 130px;
-      // display: inline-block;
       max-width: 30%;
       height: auto;
       margin: 0;

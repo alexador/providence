@@ -6,7 +6,9 @@ mixin footer(data)
       .footer__wrapper
         .row
           .col-md-3
-            img.footer__logo(src="static/img/general/logo.svg" width="139px" height="12px")
+            picture
+              source.main-nav__slide-logo(srcset="static/img/general/logo.svg")
+              img.main-nav__slide-logo(src="static/img/general/logo.png")
             p.footer__text It was some time before he obtained any answer, and the reply, when made, was unpropitious.
             picture
                 source.footer__download-app(srcset="%=static=%img/assets/footer/app_store.svg")

@@ -1,0 +1,16 @@
+//при font-size: 0; не работает justify
+.reviews {
+  .carousel-indicators {
+    font-size: 1px;
+  }
+  .reviews__img {
+    border: 3px solid $plain-text-color;
+  }
+  .active .reviews__img {
+    border: 3px solid $accent-color;
+  }
+  &__arrow-left,
+  &__arrow-right {
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
+  }  
+}

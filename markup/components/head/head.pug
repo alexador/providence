@@ -26,8 +26,11 @@ mixin head(data)
     link(rel="image_src", href="")
 
   link(rel="icon" type="image/x-icon" href="favicon.ico")
-  script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
-  script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  //- script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
   script.
     (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
-  |<!--[if lt IE 9 ]><script src="%=static=%js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar"><![endif]-->
+  |<!--[if lt IE 9 ]>
+  <script src="%=static=%js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <meta content="no" http-equiv="imagetoolbar">
+  <![endif]-->
