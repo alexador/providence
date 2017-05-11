@@ -31,6 +31,12 @@
       i {
         margin-left: 20px;
       }
+      @media(max-width: $screen-sm-max){
+        position: relative;
+        margin-top: 18px;
+        right: 0;
+        top: 0;
+      }
     }
   }
   .btn_dark {

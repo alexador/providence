@@ -1,52 +1,54 @@
 doctype html
 html(class="no-js", lang="ru")
 
-    include ../components/head/head.pug
-    include ../components/example/example.pug
-    include ../components/footer/footer.pug
-    include ../components/main-nav/main-nav.pug
-    include ../components/header/header.pug
-    include ../components/features/features.pug
-    include ../components/protect/protect.pug
-    include ../components/everywhere/everywhere.pug
-    include ../components/interface/interface.pug
-    include ../components/get-it/get-it.pug
-    include ../components/reviews/reviews.pug
-    include ../components/plan/plan.pug
-    include ../components/subscribe/subscribe.pug
+  include ../components/head/head.pug
+  include ../components/example/example.pug
+  include ../components/footer/footer.pug
+  include ../components/main-nav/main-nav.pug
+  include ../components/header/header.pug
+  include ../components/features/features.pug
+  include ../components/protect/protect.pug
+  include ../components/everywhere/everywhere.pug
+  include ../components/interface/interface.pug
+  include ../components/get-it/get-it.pug
+  include ../components/reviews/reviews.pug
+  include ../components/plan/plan.pug
+  include ../components/subscribe/subscribe.pug
 
-    head
-        +head(head.defaults)
-    body.page
-        |%=symbols=%
+  head
+    +head(head.defaults)
+  body.page
+    |%=symbols=%
 
-        section.page__wrapper
-            +main-nav()
-            +header()
-            +features()
-            +protect()
-            +everywhere()
-            +interface()
-            +get-it()
-            +reviews()
-            +plan()
-            +subscribe()
+    section.page__wrapper
+      +main-nav()
+      +header()
+      +features()
+      +protect()
+      +everywhere()
+      +interface()
+      +get-it()
+      +reviews()
+      +plan()
+      +subscribe()
 
 
 
-            .page__buffer
+      .page__buffer
 
-        .page__footer
-            +footer()
+    .page__footer
+      +footer()
 
-        script(src='%=static=%js/separate-js/svg4everybody.min.js')
-        script svg4everybody();
+    script(src='%=static=%js/separate-js/svg4everybody.min.js')
+    script svg4everybody();
 
-        //- Main scripts. You can replace it, but I recommend you to leave it here
+    //- Main scripts. You can replace it, but I recommend you to leave it here
 
-        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
-        script.
-            !window.jQuery && document.write('<script src="static/js/separate-js/jquery.min.js"><\/script>');
-        script(src="static/js/separate-js/bootstrap.min.js")
-        script(src="static/js/separate-js/wow.min.js")
-        script(src='%=static=%js/main%=hash=%%=min=%.js')
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+    script.
+      !window.jQuery && document.write('<script src="static/js/separate-js/jquery.min.js"><\/script>');
+    script(src="static/js/separate-js/bootstrap.min.js")
+    script(src="static/js/separate-js/wow.min.js")
+    script(src="static/js/separate-js/jquery.magnific-popup.min.js")
+    script(src='%=static=%js/main%=hash=%%=min=%.js')
+    script(src="static/js/separate-js/my.js")

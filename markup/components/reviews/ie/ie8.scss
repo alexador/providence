@@ -9,7 +9,10 @@
   .active .reviews__img {
     border: 3px solid $accent-color;
   }
-  &__arrow-left,
+  &__arrow-left{
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
+  }  
+  
   &__arrow-right {
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
   }  

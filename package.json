@@ -5,7 +5,9 @@
   "main": "gulpfile.js",
   "directories": {},
   "dependencies": {
-    "babel-preset-es2015": "^6.24.0"
+    "animate.css": "^3.5.2",
+    "babel-preset-es2015": "^6.24.0",
+    "magnific-popup": "^1.1.0"
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",

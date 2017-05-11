@@ -3,9 +3,9 @@ mixin header(data)
     .container
       .row
         .col-md-10.col-md-offset-1.text-center
-          h1.header__header What happens tomorrow?
-          p.header__text The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.
-          a.btn.btn_big.header__btn(href="#")
+          h1.header__header.wow.fadeInUp What happens tomorrow?
+          p.header__text.wow.fadeInUp(data-wow-delay="0.2s") The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.
+          a.btn.btn_big.header__btn.popup-youtube.wow.fadeInUp(href="https://www.youtube.com/watch?v=0vgSMFLt_No", data-wow-delay="0.25s")
             i.fa.fa-play.btn__pic-left
             |   Watch Video 
-      img.header__phone(src="%=static=%img/assets/header/iphone6.png")
+      img.header__phone.wow.fadeInUp(src="%=static=%img/assets/header/iphone6.png", data-wow-delay="0.2s")

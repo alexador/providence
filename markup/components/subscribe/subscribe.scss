@@ -16,6 +16,12 @@
       position: absolute;
       top: 4px;
       right: 5px;
+      @media(max-width: $screen-sm-max){
+        position: relative;
+        margin-top: 18px;
+        right: 0;
+        top: 0;
+      }
     }
     input {
       width: 562px;
