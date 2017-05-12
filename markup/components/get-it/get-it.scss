@@ -23,6 +23,11 @@
     input {
       width: 502px;
       max-width: 100%;
+      padding-right: 176px;
+      @media(max-width: $screen-sm-max){
+        padding-right: 26px;
+      }
+
     }
     button {
       position: absolute;

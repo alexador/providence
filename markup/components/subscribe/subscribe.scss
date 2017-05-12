@@ -25,7 +25,11 @@
     }
     input {
       width: 562px;
-      max-width: 100%;
+      max-width: 100%;      
+      padding-right: 135px;
+      @media(max-width: $screen-sm-max){
+        padding-right: 26px;
+      }
     }
   }
   &__small-text {
