@@ -9,8 +9,8 @@
       border-bottom: 1px solid #f4f4f4;
   }
   &__item {
-    padding: 0 30px;
     margin-bottom: 60px;
+    padding: 0 30px;
     @media (max-width: $screen-md-max) {
       padding: 0;
     }
@@ -26,7 +26,7 @@
       background: url(%=static=%assets/features/clock.png) left bottom no-repeat;
     }
   }
-  &__heading {
+  &__title {
     margin: 42px 0 36px;
   }
   &__text {

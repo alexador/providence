@@ -51,10 +51,10 @@
   //service table
   &__services-wrapper {
     padding-left: 10px;
-    @media screen and (min-width: $screen-md) {
+    @media (min-width: $screen-md) {
       padding-left: 50px;
     }
-    @media screen and (min-width: $screen-lg) {
+    @media (min-width: $screen-lg) {
       padding-left: 105px;
     } 
   }
@@ -107,9 +107,9 @@
         margin-right: -20px;
       }
     }
-    &_pro{        
+    &_pro{
+      margin-top: -6px;        
       background-color: #ebebed;
-      margin-top: -6px;
       @media (min-width: 580px){
         margin-top: 23px;
       }

@@ -1,9 +1,6 @@
 .reviews {
   padding-top: 131px;
   padding-bottom: 116px;
-  &__slider {
-    position: relative;
-  }
   &__wrapper {
     margin-right: 0;
     margin-left: 0;
@@ -51,7 +48,7 @@
   &__item-wrapper {
     padding-top: 40px;
   }
-  &__item-header {
+  &__item-title {
     margin-bottom: 42px;
     font-size: 32px;
   }
