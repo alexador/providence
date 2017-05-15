@@ -877,6 +877,10 @@ isobject@^2.0.0:
   dependencies:
     isarray "1.0.0"
 
+jquery-placeholder@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/jquery-placeholder/-/jquery-placeholder-2.3.1.tgz#6025a1241019c08a8fb3ab8ed076285c05ba5e91"
+
 jquery@1:
   version "1.12.4"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-1.12.4.tgz#01e1dfba290fe73deba77ceeacb0f9ba2fec9e0c"
