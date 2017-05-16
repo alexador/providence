@@ -881,6 +881,10 @@ jquery-placeholder@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/jquery-placeholder/-/jquery-placeholder-2.3.1.tgz#6025a1241019c08a8fb3ab8ed076285c05ba5e91"
 
+jquery-touchswipe@^1.6.15:
+  version "1.6.15"
+  resolved "https://registry.yarnpkg.com/jquery-touchswipe/-/jquery-touchswipe-1.6.15.tgz#be8372f2c799f9fd6b3c15e5034bf7e25e28dd83"
+
 jquery@1:
   version "1.12.4"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-1.12.4.tgz#01e1dfba290fe73deba77ceeacb0f9ba2fec9e0c"

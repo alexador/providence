@@ -18,6 +18,12 @@ $(document).ready(function () {
         e.preventDefault();
         $('.main-nav__slide-menu').removeClass('main-nav__slide-menu_open');
       });
+      $('.main-nav__slide-menu').swipe({
+        swipeLeft: function (event, phase, direction, distance, duration, fingers) {
+          $(".main-nav__slide-menu").removeClass("main-nav__slide-menu_open");
+          console.log(distance);
+        }
+      })
     }
   });
 });
